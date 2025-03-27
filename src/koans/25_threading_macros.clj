@@ -65,5 +65,3 @@
        (function-that-takes-a-coll "hello" "there")
        (into []))))
 
-(defn count-occurrences [a coll]
-  (count (filter #(= %1 a) coll)))

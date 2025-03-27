@@ -67,7 +67,9 @@
 ;; (println (remove-occurrences [10 20 30 10 10] 10)) ;;=> (20 30)
 
 (defn group-frequencies [coll]
-  (map #()))
+  (into {}
+        (map
+         (fn [[k v]] [= k v]) coll )))
 
 ;; (group-frequencies [1 2 2 3 3 3])
 ;; => {1 1, 2 2, 3 3}
